@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-Exemplo CSS-">
+<html>
+	<head>
+	  <title>Império Cereais Agroindustrial S/A. - A força do Brasil</title>
+	   		<link rel="stylesheet" href="style.css">
+			<style type="text/css"></style>
+	</head>
+
+<script language="JavaScript">
+//script encontrado em a1javascripts.com
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) { return (22*Math.abs(Math.sin(i/(textLength/3.14))) );
+}
+if (incMethod == 2) { return (255*Math.abs(Math.cos(i/(textLength/3.14))));
+}
+return(0)
+}
+function sizeCycle(text,method,dis)
+{
+var output = "";
+for (i = 0; i < text.length; i++) {
+size = parseInt(nextSize(i +dis,method,text.length));
+output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+}
+if (document.all)
+theDiv.innerHTML = output;
+else if (document.getElementById){
+rng = document.createRange();
+el = document.getElementById('theDiv');
+rng.setStartBefore(el);
+htmlFrag = rng.createContextualFragment(output);
+while (el.hasChildNodes()) el.removeChild(el.lastChild);
+el.appendChild(htmlFrag);}
+else if (document.layers){
+
+document.theDiv.document.write("<font face='Verdana'point-size=11>"+output+"</font>");
+document.theDiv.document.close();}
+
+
+}
+//coloque seu texto aqui
+
+function doWave(n) {
+var theText = 'Faça aqui a sua denúncia anônima!!!!';
+
+sizeCycle(theText,1,n);
+if (n > theText.length) {
+n=0
+}
+setTimeout("doWave(" + (n+1) + ")", 100);
+}
+
+</script>
+
+
+<body onload="doWave(0)">
+
+
+<div ID="theDiv" align="center"></div>
+
+	
+	<body>
+		<!-- Menu de navegacao do site -->
+		<ul class="navbar">
+		  <li><a href="index.html">Home</a>
+		  <li><a href="institucional.html">Institucional</a>
+		  <li><a href="parceiros.html">Parceiros</a>
+		  <li><a href="tecnologias.html">Tecnologias</a>
+		  <li><a href="trabalhe_conosco.html">Trabalhe conosco</a>
+		  <li><a href="fale_conosco.html">Fale conosco</a>
+		  <li><a href="denuncias.html">Denúncias</a>
+		</ul>
+		
+		<!-- Conteudo -->
+		<h1>Denúncias</h1>
+
+		<img src="denuncia.png" alt="Império Cereais Agroindustrial S/A."/>
+
+		<h2>"A omissão é um mal a ser eliminado!"</h2>
+
+		<div class="text">
+			<p>"O Canal de Denúncias é o principal meio de comunicação de desvios que infrinjam as diretrizes do Programa de Ética e Compliance." <br><br>
+			 Os processos de apuração contam com apoio de empresa especializada e independente, visando garantir maior imparcialidade e confidencialidade nos processos de apuração. <br><br> Os eventos que devem ser reportados no Canal de Denúncia dizem respeito não somente a infrações às diretrizes do Programa de Ética e Compliance, mas também à infração legal, normativa, fraude, ​ desvios, assédios moral e sexual, furtos, corrupção, suborno, conflito de interesses, segurança da informação, falsidade ideológica, exercício ilegal da profissão, dentre outros. <br><br> Todos os relatos de violação serão apurados pela área de Compliance, que emitirá, sempre que for identificada uma transgressão, parecer contendo a descrição dos fatos, as análises realizadas com respectivas evidências, as conclusões, as recomendações e os planos de ação. Tais recomendações ou planos de ação podem determinar a revisão e eventual alteração de processos, bem como, impor medidas educativas ou disciplinares. <br><br> Acesse o Guia do Canal de Denúncia, e saiba como utilizar esse meio de comunicação de maneira correta e tire suas dúvidas sobre: <br><br><br> Telefone: 0800 741 0004</p>
+		</div>
+
+		<a href="mailto:denuncia@imperiocereais.com.br">Enviar e-mail para Denúncia!</a>
+
+		<a href="http://www.facebook.com/eder.cabral.31" title="Acesso ao facebook"><img alt="Redes Sociais" src="logo_facebook.jpeg" style="position:absolute; bottom:240px; right:1225px" /></a>
+		
+		<a href="http://www.linkedin.com/in/edercabral" title="Acesso ao linkedin"><img alt="Redes Sociais" src="logo_linkedin.png" style="position:absolute; bottom:130px; right:1225px" /></a>
+		
+	
+		<!-- Date e assine sua página, isto é educado! -->
+		<address>© 2021 Império Cereais Agroindustrial S/A. Todos os direitos reservados. Desenvolvida por Eder O. Cabral </address>
+	</body>
+</html>
+
